@@ -8,6 +8,7 @@ const app = express()
 // 这对于处理 POST、PUT 和 PATCH 请求等需要从请求体中提取数据的情况非常有用!
 app.use(express.json())// 使用中间件
 app.use(cors())
+app.use(express.static('build'))
 
 const requestLogger = (request, response, next) => {
   console.log('Method:', request.method)
