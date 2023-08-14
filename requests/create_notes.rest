@@ -3,6 +3,6 @@ content-type: application/json
 
 
 {
-    "content": "Postman is a good tool for testing",
+    "content": "Postman test 3",
     "important": true
 }
