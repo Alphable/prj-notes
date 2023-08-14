@@ -1,7 +1,7 @@
 // 通过require函数导入了Express.js模块
 const express = require('express')
 const cors = require('cors')
-require('dotenv').config()
+// require('dotenv').config()
 // console.log('loaded env variables.')
 const Note = require('./models/note')
 // 创建了一个Express应用程序实例
