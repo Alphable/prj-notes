@@ -10,9 +10,17 @@ mongoose.connect(url).then(result => {
 })
 
 const noteSchema = new mongoose.Schema({
-  content: String,
-  date: Date,
-  important: Boolean,
+  content:{
+    type: String,
+    // minLength和required验证器是内置的
+    minLength: 5,
+    required: true
+  },
+  date: {
+    type: Date,
+    required: true
+  },
+  important: Boolean
 })
 
 // response.json(xxx)这个将响应转成json格式的函数会自动调用以下toJSON
